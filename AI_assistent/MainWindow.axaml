@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+        x:Class="AI_assistent.MainWindow"
+        Title="AI_assistent" Foreground="White" d:HorizontalAlignment="Right" d:VerticalAlignment="Bottom" WindowStartupLocation="Manual"
+        CanResize="False" SystemDecorations="None">
+
+    <StackPanel Background="#23272A">
+        <TextBox Name="tbRequest" Width="320" Height="160" Margin="0 0 0 0" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" AcceptsReturn="True" Text="" FontSize="16"/>
+        <Button Name="btnSendRequest" Content="Спросить ИИ" Width="150" Height="40" FontSize="18" Margin="180 10 5 10" Foreground="White"/>
+        <TextBox Name="tbResponse" Width="320" Height="160" Margin="0 0 0 16" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" AcceptsReturn="True" Text="Здесь будет сообщение от нейросети" FontSize="16"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="btnYes" Content="ДА" Background="Blue" Foreground="White" Width="75" Height="32" Margin="-375 0 5 10"/>
+            <Button Name="btnNo" Content="НЕТ" Background="Blue" Foreground="White" Width="75" Height="32" Margin="-200 0 15 10"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
